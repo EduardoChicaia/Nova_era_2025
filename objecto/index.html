@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objectos</title>
+</head>
+<body>
+    
+    <script>
+        // ESTRUTURA BASICA DE OBJECT
+        const pessoa = {
+            nome: 'Eduardo Nhimi',
+            sobrenome: 'Chicaia',
+            Idade: 35
+        }
+        console.log (`Ola o meu nome é ${pessoa.nome} ${pessoa.sobrenome} e tenho ${pessoa.Idade} anos de idade.`)
+
+        //ESTRUTURA BASICA DE OBJECT com funções
+
+        function criarPessoa (nome, sobrenome, idade){
+            return{
+                nome,
+                sobrenome,
+                idade
+            }
+        }
+        const pessoa1 = criarPessoa('Ana baza', 'Chicaia', 37)
+        const pessoa2 = criarPessoa('Ana', 'Maria', 49)
+        console.log(pessoa1)
+    </script>
+</body>
+</html>
